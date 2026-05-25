@@ -383,5 +383,3 @@ eas build --platform ios --profile development
 ---
 
 ## License
-
-Private — APPCASE INC © 2026
