@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "StriveApp",
+    "slug": "StriveApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.mikazujz18.StriveApp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocationWhenInUseUsageDescription": "StriveApp needs your location to track workouts and show your position on the map.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "StriveApp needs your location to track workouts in the background.",
+        "NSMotionUsageDescription": "StriveApp uses motion data to count your steps during workouts.",
+        "NSPhotoLibraryUsageDescription": "StriveApp needs access to save share cards to your photo library.",
+        "NSCameraUsageDescription": "StriveApp needs camera access for workout photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.mikazujz18.striveapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-web-browser",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "StriveApp needs your location to track workouts."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "StriveApp needs access to save share cards.",
+          "savePhotosPermission": "StriveApp needs access to save share cards."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "StriveApp needs access to your photos for share card backgrounds."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6bb8c305-cb92-443d-afc3-234792e0cf2a"
+      }
+    }
+  }
+}
